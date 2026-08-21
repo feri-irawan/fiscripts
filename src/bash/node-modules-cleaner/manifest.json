@@ -1,0 +1,15 @@
+{
+  "id": "node-modules-cleaner",
+  "variant": "bash",
+  "version": "1.0.0",
+  "runtime": "bash",
+  "entrypoint": "main.sh",
+  "output": "scripts/bash/node-modules-cleaner.sh",
+  "supported_os": ["linux"],
+  "dependencies": [
+    "bash/_lib/colors.sh",
+    "bash/_lib/format.sh"
+  ],
+  "destructive": true,
+  "description": "Interactively find and remove selected node_modules directories."
+}
