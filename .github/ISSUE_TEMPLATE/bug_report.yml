@@ -1,0 +1,38 @@
+name: Bug report
+description: Report a reproducible problem in a script or repository tool.
+title: "bug: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include secrets, personal data, or destructive proof-of-concept payloads.
+        For security vulnerabilities, follow SECURITY.md instead.
+  - type: input
+    id: script
+    attributes:
+      label: Script or tool
+      placeholder: node-modules-cleaner 1.0.0
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include OS, shell/runtime versions, and installation method.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Provide safe steps and a minimal fixture if possible.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and observed behavior
+    validations:
+      required: true
